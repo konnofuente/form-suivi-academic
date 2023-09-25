@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FormWizard_v5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="colorlib.com" />
+
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link
+      rel="stylesheet"
+      href="fonts/material-design-iconic-font/css/material-design-iconic-font.css"
+    />
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      #red {
+        color: red;
+      }
+    </style>
+
+    
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <div class="image-holder">
+        <img src="images/Information-Technology-PNG-Clipart.png" alt="" />
+      </div>
+      <form action="/get_information.php/" method="post">
+        <div id="wizard">
+          <!-- SECTION 1 -->
+          <h4></h4>
+          <section>
+            <div class="form-row">
+              <label for="name"> Nom <span id="red">*</span> </label>
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="prenom"> Prenom <span id="red">*</span> </label>
+              <input
+                type="text"
+                name="prenom"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-row form-group">
+              <div class="form-holder">
+                <label for="phone_number">
+                  Numéro de telephone <span id="red">*</span>
+                </label>
+                <input
+                  type="text"
+                  name="phone_number"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="address"> Address <span id="red">*</span> </label>
+              <input
+                type="email"
+                name="address"
+                class="form-control"
+                placeholder="exemple@gmail.com"
+                style="margin-bottom: 20px"
+                required
+              />
+            </div>
+          </section>
+
+          <!-- SECTION 2 -->
+          <h4></h4>
+          <section>
+            <h6>Pour L1</h6>
+            <hr />
+            <div class="form-row">
+              <label for="">
+                Experience prealable en infomatique <span id="red">*</span>
+              </label>
+              <input type="radio"  required /> oui
+              <input type="radio"  required /> non
+              <input type="radio"  required /> peut-etre
+            </div>
+            <div class="form-row">
+              <label for=""> Si oui, preciser </label>
+              <input
+                type="text"
+                class="form-control"
+              />
+            </div>
+            <h6>Pour L2</h6>
+            <hr />
+            <div class="form-row">
+              <label for="">
+                Competences en dev web (HTML, CSS, JS) ? <span id="red">*</span>
+              </label>
+              <input
+                type="radio"
+                required
+              />
+              Debutant
+              <input
+                type="radio"
+                required
+              />
+              Intermediaire
+              <input
+                type="radio"
+                required
+              />
+              Avance
+            </div>
+            <div class="form-row">
+              <label for=""> Competences en C ?<span id="red">*</span> </label>
+              <input
+                type="radio"
+                value="debutant"
+                required
+              />
+              Debutant
+              <input
+                type="radio"
+                required
+              />
+              Intermediaire
+              <input
+                type="radio"
+                required
+              />
+              Avance
+            </div>
+            <div class="form-row">
+              <label for="">
+                Competences en dev mobile ?<span id="red">*</span>
+              </label>
+              <input
+                type="radio"
+                required
+              />
+              Debutant
+              <input
+                type="radio"
+                required
+              />
+              Intermediaire
+              <input
+                type="radio"
+                required
+              />
+              Avance
+            </div>
+            <div class="form-row">
+              <label for="">
+                Avez-vous deja participe a un hackathons ?
+                <span id="red">*</span>
+              </label>
+              <input type="radio"  required /> oui
+              <input type="radio"  required /> non
+              <input type="radio"  required /> peut-etre
+            </div>
+          </section>
+
+          <!-- SECTION 3 -->
+          <h4></h4>
+          <section>
+            <div class="form-row">
+              <label for="">
+                Avez-vous deja realise et heberger un projet informatique ?
+                <span id="red">*</span>
+              </label>
+              <input type="radio"  required /> oui
+              <input type="radio"  required /> non
+            </div>
+            <div class="form-row">
+              <label for="">
+                Possedez-vous un portfolio en ligne <span id="red">*</span>
+              </label>
+              <input type="radio"  required /> oui
+              <input type="radio"  required /> non
+            </div>
+            <div class="form-row">
+              <label for="">
+                L'informatique est une...? <span id="red">*</span>
+              </label>
+              <input type="radio" value="passion" required /> Passion
+              <input type="radio" value="apprentissage" required />
+              Apprentissage
+            </div>
+            <div class="form-row">
+              <label for="">
+                Avez-vous deja travailler avec une equipe de dev ?
+                <span id="red">*</span>
+              </label>
+              <input type="radio"  required /> oui
+              <input type="radio"  required /> non
+            </div>
+            <div class="form-row">
+              <label for="">
+                Des notions en bases de donnees (BD) ? <span id="red">*</span>
+              </label>
+              <input type="radio"  required /> oui
+              <input type="radio"  required /> non
+              <input type="radio" value="peut-etre" required /> peut-etre
+            </div>
+            <div class="form-row">
+              <label for="">
+                Avez-vous deja fais des stages ou des emplois lies à
+                l'informatique <span id="red">*</span>
+              </label>
+              <input type="radio"  required /> oui
+              <input type="radio"  required /> non
+              <input type="radio" value="peut-etre" required /> peut-etre
+            </div>
+            <div class="form-row">
+              <label for="">
+                Etes-vous à l'aise avec le travail et la communication à
+                distance ? <span id="red">*</span>
+              </label>
+              <input type="radio"  required /> oui
+              <input type="radio"  required /> non
+              <input type="radio" value="peut-etre" required /> peut-etre
+            </div>
+            <div class="form-row">
+              <label for="">
+                Avez-vous deja utilise des IDE (PyCharm,...) ?
+                <span id="red">*</span>
+              </label>
+              <input type="radio"  required /> oui
+              <input type="radio"  required /> non
+              <input type="radio" value="peut-etre" required /> peut-etre
+            </div>
+            <div class="form-row">
+              <label for="">
+                Experience les methodologies de dev (agile,...) ?
+                <span id="red">*</span>
+              </label>
+              <input type="radio"  required /> oui
+              <input type="radio"  required /> non
+              <input type="radio" value="peut-etre" required /> peut-etre
+            </div>
+            <div class="form-row">
+              <label for="">
+                Avez-vous deja cree ou gere un site web ou blog ?
+                <span id="red">*</span>
+              </label>
+              <input type="radio"  required /> oui
+              <input type="radio"  required /> non
+              <input type="radio" value="peut-etre" required /> peut-etre
+            </div>
+          </section>
+
+          <!-- SECTION 4 -->
+          <h4></h4>
+          <section>
+            <h6>Montant de la pre-inscription : 5000 FCFA</h6>
+            <div class="checkbox-circle">
+              <label class="active">
+                <input
+                  type="radio"
+                  name="billing method"
+                  value="momo_payment"
+                  checked
+                />Momo
+                <span class="checkmark"></span>
+                <div class="tooltip">
+                  <img src="./images/ELmD2FZXYAE58gD.jpeg" alt="" />
+                </div>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="billing method"
+                  value="om_payments"
+                />OM
+                <span class="checkmark"></span>
+                <div class="tooltip">
+                  <img src="./images/news-16-03-02.jpg" alt="" />
+                </div>
+              </label>
+            </div>
+            <div>
+              <button type="submit" name="submit">Submit</button>
+            </div>
+          </section>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- JQUERY STEP -->
+    <script src="js/jquery.steps.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <!-- Template created and distributed by Colorlib -->
+  </body>
+</html>
