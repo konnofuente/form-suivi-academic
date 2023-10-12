@@ -34,229 +34,157 @@
           <!-- SECTION 1 -->
           <h4></h4>
           <section>
-            <div class="form-row">
-              <label for="name"> Nom <span id="red">*</span> </label>
-              <input
-                type="text"
-                name="name"
-                class="form-control"
-                required
-              />
-            </div>
-            <div class="form-row">
-              <label for="prenom"> Prenom <span id="red">*</span> </label>
-              <input
-                type="text"
-                name="prenom"
-                class="form-control"
-                required
-              />
-            </div>
-            <div class="form-row form-group">
-              <div class="form-holder">
-                <label for="phone_number">
-                  Numéro de telephone <span id="red">*</span>
-                </label>
-                <input
-                  type="text"
-                  name="phone_number"
-                  class="form-control"
-                  required
-                />
+            <fieldset>
+              <legend>Personal Information</legend>
+              <div class="form-row">
+                <label for="name">Nom <span class="required">*</span></label>
+                <input type="text" name="name" class="form-control" id="name" required />
               </div>
-            </div>
-            <div class="form-row">
-              <label for="address"> Address <span id="red">*</span> </label>
-              <input
-                type="email"
-                name="address"
-                class="form-control"
-                placeholder="exemple@gmail.com"
-                style="margin-bottom: 20px"
-                required
-              />
-            </div>
+              <div class="form-row">
+                <label for="prenom">Prenom <span class="required">*</span></label>
+                <input type="text" name="prenom" class="form-control" id="prenom" required />
+              </div>
+              <div class="form-row">
+                <label for="phone_number">Numéro de telephone <span class="required">*</span></label>
+                <input type="tel" name="phone_number" class="form-control" id="phone_number" required />
+              </div>
+              <div class="form-row">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="exemple@gmail.com" required />
+              </div>
+            </fieldset>
+            
           </section>
 
           <!-- SECTION 2 -->
           <h4></h4>
           <section>
-            <h6>Pour L1</h6>
-            <hr />
-            <div class="form-row">
-              <label for="">
-                Experience prealable en infomatique <span id="red">*</span>
-              </label>
-              <input type="radio"  required /> oui
-              <input type="radio"  required /> non
-              <input type="radio"  required /> peut-etre
-            </div>
-            <div class="form-row">
-              <label for=""> Si oui, preciser </label>
-              <input
-                type="text"
-                class="form-control"
-              />
-            </div>
-            <h6>Pour L2</h6>
-            <hr />
-            <div class="form-row">
-              <label for="">
-                Competences en dev web (HTML, CSS, JS) ? <span id="red">*</span>
-              </label>
-              <input
-                type="radio"
-                required
-              />
-              Debutant
-              <input
-                type="radio"
-                required
-              />
-              Intermediaire
-              <input
-                type="radio"
-                required
-              />
-              Avance
-            </div>
-            <div class="form-row">
-              <label for=""> Competences en C ?<span id="red">*</span> </label>
-              <input
-                type="radio"
-                value="debutant"
-                required
-              />
-              Debutant
-              <input
-                type="radio"
-                required
-              />
-              Intermediaire
-              <input
-                type="radio"
-                required
-              />
-              Avance
-            </div>
-            <div class="form-row">
-              <label for="">
-                Competences en dev mobile ?<span id="red">*</span>
-              </label>
-              <input
-                type="radio"
-                required
-              />
-              Debutant
-              <input
-                type="radio"
-                required
-              />
-              Intermediaire
-              <input
-                type="radio"
-                required
-              />
-              Avance
-            </div>
-            <div class="form-row">
-              <label for="">
-                Avez-vous deja participe a un hackathons ?
-                <span id="red">*</span>
-              </label>
-              <input type="radio"  required /> oui
-              <input type="radio"  required /> non
-              <input type="radio"  required /> peut-etre
-            </div>
+            <fieldset>
+              <legend>Pour L1</legend>
+              
+              <div class="form-row">
+                <label>Experience préalable en informatique <span class="required">*</span></label>
+                <input type="radio" name="experience_L1" value="oui" required /> oui
+                <input type="radio" name="experience_L1" value="non" required /> non
+                <input type="radio" name="experience_L1" value="peut-etre" required /> peut-être
+              </div>
+              
+              <div class="form-row">
+                <label>Si oui, préciser</label>
+                <input type="text" class="form-control" name="experience_L1_details" />
+              </div>
+              
+            </fieldset>
+            
+            <fieldset>
+              <legend>Pour L2</legend>
+              
+              <div class="form-row">
+                <label>Compétences en dev web (HTML, CSS, JS) ? <span class="required">*</span></label>
+                <input type="radio" name="web_dev_skills" value="Debutant" required /> Débutant
+                <input type="radio" name="web_dev_skills" value="Intermediaire" required /> Intermédiaire
+                <input type="radio" name="web_dev_skills" value="Avance" required /> Avancé
+              </div>
+            
+              <div class="form-row">
+                <label>Compétences en C ? <span class="required">*</span></label>
+                <input type="radio" name="c_skills" value="Debutant" required /> Débutant
+                <input type="radio" name="c_skills" value="Intermediaire" required /> Intermédiaire
+                <input type="radio" name="c_skills" value="Avance" required /> Avancé
+              </div>
+              
+              <div class="form-row">
+                <label>Compétences en dev mobile ? <span class="required">*</span></label>
+                <input type="radio" name="mobile_dev_skills" value="Debutant" required /> Débutant
+                <input type="radio" name="mobile_dev_skills" value="Intermediaire" required /> Intermédiaire
+                <input type="radio" name="mobile_dev_skills" value="Avance" required /> Avancé
+              </div>
+              
+              <div class="form-row">
+                <label>Avez-vous déjà participé à un hackathon ? <span class="required">*</span></label>
+                <input type="radio" name="hackathon_participation" value="oui" required /> oui
+                <input type="radio" name="hackathon_participation" value="non" required /> non
+                <input type="radio" name="hackathon_participation" value="peut-etre" required /> peut-être
+              </div>
+            
+            </fieldset>
+            
           </section>
 
           <!-- SECTION 3 -->
           <h4></h4>
           <section>
-            <div class="form-row">
-              <label for="">
-                Avez-vous deja realise et heberger un projet informatique ?
-                <span id="red">*</span>
-              </label>
-              <input type="radio"  required /> oui
-              <input type="radio"  required /> non
-            </div>
-            <div class="form-row">
-              <label for="">
-                Possedez-vous un portfolio en ligne <span id="red">*</span>
-              </label>
-              <input type="radio"  required /> oui
-              <input type="radio"  required /> non
-            </div>
-            <div class="form-row">
-              <label for="">
-                L'informatique est une...? <span id="red">*</span>
-              </label>
-              <input type="radio" value="passion" required /> Passion
-              <input type="radio" value="apprentissage" required />
-              Apprentissage
-            </div>
-            <div class="form-row">
-              <label for="">
-                Avez-vous deja travailler avec une equipe de dev ?
-                <span id="red">*</span>
-              </label>
-              <input type="radio"  required /> oui
-              <input type="radio"  required /> non
-            </div>
-            <div class="form-row">
-              <label for="">
-                Des notions en bases de donnees (BD) ? <span id="red">*</span>
-              </label>
-              <input type="radio"  required /> oui
-              <input type="radio"  required /> non
-              <input type="radio" value="peut-etre" required /> peut-etre
-            </div>
-            <div class="form-row">
-              <label for="">
-                Avez-vous deja fais des stages ou des emplois lies à
-                l'informatique <span id="red">*</span>
-              </label>
-              <input type="radio"  required /> oui
-              <input type="radio"  required /> non
-              <input type="radio" value="peut-etre" required /> peut-etre
-            </div>
-            <div class="form-row">
-              <label for="">
-                Etes-vous à l'aise avec le travail et la communication à
-                distance ? <span id="red">*</span>
-              </label>
-              <input type="radio"  required /> oui
-              <input type="radio"  required /> non
-              <input type="radio" value="peut-etre" required /> peut-etre
-            </div>
-            <div class="form-row">
-              <label for="">
-                Avez-vous deja utilise des IDE (PyCharm,...) ?
-                <span id="red">*</span>
-              </label>
-              <input type="radio"  required /> oui
-              <input type="radio"  required /> non
-              <input type="radio" value="peut-etre" required /> peut-etre
-            </div>
-            <div class="form-row">
-              <label for="">
-                Experience les methodologies de dev (agile,...) ?
-                <span id="red">*</span>
-              </label>
-              <input type="radio"  required /> oui
-              <input type="radio"  required /> non
-              <input type="radio" value="peut-etre" required /> peut-etre
-            </div>
-            <div class="form-row">
-              <label for="">
-                Avez-vous deja cree ou gere un site web ou blog ?
-                <span id="red">*</span>
-              </label>
-              <input type="radio"  required /> oui
-              <input type="radio"  required /> non
-              <input type="radio" value="peut-etre" required /> peut-etre
-            </div>
+            <fieldset>
+              <legend>Additional Information</legend>
+            
+              <div class="form-row">
+                <label>Avez-vous déjà réalisé et hébergé un projet informatique ? <span class="required">*</span></label>
+                <input type="radio" name="hosted_project" value="oui" required /> Oui
+                <input type="radio" name="hosted_project" value="non" required /> Non
+              </div>
+            
+              <div class="form-row">
+                <label>Possédez-vous un portfolio en ligne ? <span class="required">*</span></label>
+                <input type="radio" name="has_portfolio" value="oui" required /> Oui
+                <input type="radio" name="has_portfolio" value="non" required /> Non
+              </div>
+            
+              <div class="form-row">
+                <label>L'informatique est une... ? <span class="required">*</span></label>
+                <input type="radio" name="it_is_a" value="passion" required /> Passion
+                <input type="radio" name="it_is_a" value="apprentissage" required /> Apprentissage
+              </div>
+            
+              <div class="form-row">
+                <label>Avez-vous déjà travaillé avec une équipe de dev ? <span class="required">*</span></label>
+                <input type="radio" name="worked_with_dev_team" value="oui" required /> Oui
+                <input type="radio" name="worked_with_dev_team" value="non" required /> Non
+              </div>
+            
+              <div class="form-row">
+                <label>Des notions en bases de données (BD) ? <span class="required">*</span></label>
+                <input type="radio" name="database_knowledge" value="oui" required /> Oui
+                <input type="radio" name="database_knowledge" value="non" required /> Non
+                <input type="radio" name="database_knowledge" value="peut-etre" required /> Peut-être
+              </div>
+            
+              <div class="form-row">
+                <label>Avez-vous déjà fait des stages ou des emplois liés à l'informatique ? <span class="required">*</span></label>
+                <input type="radio" name="it_jobs_or_internships" value="oui" required /> Oui
+                <input type="radio" name="it_jobs_or_internships" value="non" required /> Non
+                <input type="radio" name="it_jobs_or_internships" value="peut-etre" required /> Peut-être
+              </div>
+            
+              <div class="form-row">
+                <label>Êtes-vous à l'aise avec le travail et la communication à distance ? <span class="required">*</span></label>
+                <input type="radio" name="comfortable_with_remote_work" value="oui" required /> Oui
+                <input type="radio" name="comfortable_with_remote_work" value="non" required /> Non
+                <input type="radio" name="comfortable_with_remote_work" value="peut-etre" required /> Peut-être
+              </div>
+            
+              <div class="form-row">
+                <label>Avez-vous déjà utilisé des IDE (PyCharm,...) ? <span class="required">*</span></label>
+                <input type="radio" name="used_ide" value="oui" required /> Oui
+                <input type="radio" name="used_ide" value="non" required /> Non
+                <input type="radio" name="used_ide" value="peut-etre" required /> Peut-être
+              </div>
+            
+              <div class="form-row">
+                <label>Expérience les méthodologies de dev (agile,...) ? <span class="required">*</span></label>
+                <input type="radio" name="dev_methodologies_experience" value="oui" required /> Oui
+                <input type="radio" name="dev_methodologies_experience" value="non" required /> Non
+                <input type="radio" name="dev_methodologies_experience" value="peut-etre" required /> Peut-être
+              </div>
+            
+              <div class="form-row">
+                <label>Avez-vous déjà créé ou géré un site web ou blog ? <span class="required">*</span></label>
+                <input type="radio" name="managed_website_or_blog" value="oui" required /> Oui
+                <input type="radio" name="managed_website_or_blog" value="non" required /> Non
+                <input type="radio" name="managed_website_or_blog" value="peut-etre" required /> Peut-être
+              </div>
+              
+            </fieldset>
+            
           </section>
 
           <!-- SECTION 4 -->
