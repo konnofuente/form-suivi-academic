@@ -27,6 +27,11 @@ body {
 textarea {
   resize: none; }
 
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
 input, textarea, select, button {
   font-family: "Poppins-Regular";
   font-size: 15px;
@@ -98,7 +103,7 @@ body {
         background: #e6e6e6;
         border-radius: 3.5px; }
       .steps ul li.first a, .steps ul li.checked a {
-        background: #f3d4b7;
+        background: #FF7500;
         transition: all 0.5s ease; }
     .steps ul:before {
       content: "Billing Details";
@@ -146,7 +151,7 @@ h3 {
   width: 100%;
   padding: 0 18px; }
   .form-control:focus {
-    border-color: #f3d4b7; }
+    border-color: #FF7500; }
   .form-control::-webkit-input-placeholder {
     color: #999;
     font-size: 13px; }
@@ -182,7 +187,7 @@ textarea.form-control {
   height: 51px;
   width: 135px;
   align-items: center;
-  background: #f3d4b7;
+  background: #FF7500;
   cursor: pointer;
   position: relative;
   padding-left: 41px;
@@ -201,7 +206,7 @@ textarea.form-control {
     -webkit-transform: translateZ(0);
     transform: translateZ(0); }
   .actions li a:hover {
-    background: #d9bda3; }
+    background: #FF7500; }
     .actions li a:hover:before {
       -webkit-animation-name: hvr-icon-wobble-horizontal;
       animation-name: hvr-icon-wobble-horizontal;
@@ -455,5 +460,35 @@ textarea.form-control {
 
   .item .purchase {
     margin-left: 11px; } }
+
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .submit-button {
+        padding: 0;
+        border: none;
+        display: inline-flex;
+        height: 51px;
+        width: 135px;
+        align-items: center;
+        background: #FF7500;
+        cursor: pointer;
+        position: relative;
+        padding-left: 41px;
+        color: #333;
+        transform: perspective(1px) translateZ(0);
+        transition-duration: 0.3s;
+        font-weight: 400;
+    }
+    
+    .actions li:last-child .submit-button {
+        padding-left: 29px;
+        width: 167px;
+    }
+    
 
 /*# sourceMappingURL=style.css.map */
